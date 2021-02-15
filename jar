@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>Metabase</title>
+  <meta name='description' content='The fastest, easiest way to share data and analytics inside your company. An open source Business Intelligence server you can install in 5 minutes that connects to MySQL, PostgreSQL, MongoDB and more! Anyone can use it to build charts, dashboards and nightly email reports.'>
+
+  <!-- Twitter cards -->
+  <meta name="twitter:site"    content="@metabase">
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title"   content="">
+  
+  <meta name="twitter:description" content="The fastest, easiest way to share data and analytics inside your company. An open source Business Intelligence server you can install in 5 minutes that connects to MySQL, PostgreSQL, MongoDB and more! Anyone can use it to build charts, dashboards and nightly email reports.">
+  
+  
+  <meta name="twitter:card"  content="summary">
+  
+  <!-- end of Twitter cards -->
+
+  <link rel='shortcut icon' href='/images/favicon.ico'/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap">
+  <link rel='stylesheet' href='/css/main.css'>
+  <link rel='stylesheet' href='/css/docs.css'>
+
+  <link rel='canonical' href='https://www.metabase.com/start/oss/jar'>
+  <link rel='alternate' type='application/rss+xml' title='Metabase' href='/feed.xml' />
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-60817802-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+
+  <body>
+
+    <header
+    class="MB-Header text-brand flex align-center px2 fixed bg-white zF full mb3 top"
+>
+    <a href="/">
+        <div class="MB-Logo inline-block"></div>
+    </a>
+    <a
+        class="js-mobile-nav-trigger bordered rounded z5 relative sm-hide ml-auto psy px1"
+    >
+        <span>Menu</span>
+        <span class="hide">Close</span>
+    </a>
+    <ul
+        class="js-nav fixed flex flex-column hide card sm-no-card sm-text-centered m2 sm-m0 top left right p2 sm-p0 z4 sm-relative sm-bg-transparent sm-show sm-ml-auto sm-mr-auto"
+    >
+        <li
+            class="no-list-style sm-inline-block m2"
+            style="margin-right: 20px;"
+        >
+            <a
+                class="text-dark fw-900 sm-fw-700 fs-l sm-fs-n"
+                href="/docs/latest"
+                >Documentation</a
+            >
+        </li>
+        <li class="no-list-style sm-inline-block m2" style="margin-right: 20px">
+            <a class="text-dark fw-900 sm-fw-700 fs-l sm-fs-n" href='/learn'>Learn</a>
+        </li>
+        <li
+            class="no-list-style sm-inline-block m2"
+            style="margin-right: 20px;"
+        >
+            <a
+                class="text-dark fw-900 sm-fw-700 fs-l sm-fs-n"
+                href="https://discourse.metabase.com/"
+                >Discussion</a
+            >
+        </li>
+        <li class="no-list-style sm-inline-block m2">
+            <a class="text-dark fw-900 sm-fw-700 fs-l sm-fs-n" href="/blog"
+                >Blog</a
+            >
+        </li>
+        <li class="no-list-style sm-inline-block m2">
+            <a
+                class="text-dark fw-900 sm-fw-700 fs-l sm-fs-n"
+                href="/start/hosted/"
+                >Pricing</a
+            >
+        </li>
+        <li class="no-list-style sm-inline-block m2">
+            <a
+                class="text-dark fw-900 sm-fw-700 fs-l sm-fs-n"
+                href="/enterprise/index.html"
+                >Enterprise</a
+            >
+        </li>
+    </ul>
+    <a class="Button Button--primary hide sm-show" href="/start/hosted"
+        >Get Metabase</a
+    >
+</header>
+
+
+    <div class="no-overflow">
+        <meta http-equiv="refresh" content="1;URL=https://downloads.metabase.com/v0.37.9/metabase.jar">
+
+<div class="bg-alt pt2">
+    <div class="container">
+        <div class="text-centered mb4">
+            <img class="ml-auto mr-auto my4 block" src="/images/jar.svg" />
+            <h1>Downloading metabase.jar...</h1>
+            <p>Your download should begin automatically. If it doesn't you can <a href="https://downloads.metabase.com/v0.37.9/metabase.jar">start it manually.</a></p>
+        </div>
+    </div>
+</div>
+<div class="mt2">
+    <div class="container container-small">
+        <div class="my2">
+            <div>
+    <p>
+        The most basic way of running Metabase is to open up a terminal and use
+        Java to launch the application. This is the only command you’ll need:
+    </p>
+
+    <code>java -jar metabase.jar</code>
+
+    <p>This will launch a Metabase server on port 3000 by default.</p>
+    <p>
+        Metabase requires that you have <span class="text-bold">Java 8</span> or
+        higher available on your system. We have run Metabase with both the
+        OpenJDK and Oracle JDK, so feel free to use either.
+    </p>
+    <p>
+        If you want to learn more about how to run Metabase using the .jar file
+        it’s
+        <a
+            href="/docs/v0.37.9/operations-guide/running-the-metabase-jar-file.html"
+            >available in our documentation</a
+        >.
+    </p>
+</div>
+
+        </div>
+        <div class="text-centered pt2 mt2">
+    <h3>Next steps</h3>
+    <ol class="no-list-style flex align-center pl0 pt3">
+        <li class="flex-half mr2">
+            <a
+                href="/docs/v0.37.9/setting-up-metabase.html"
+                class="block card text-default text-left p2 px3"
+            >
+                <svg
+                    width="42px"
+                    height="42px"
+                    viewBox="0 0 42 42"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#509ee3"
+                >
+                    <path
+                        d="M39,15.75 L39,40 C39,41.1045695 38.1045695,42 37,42 L5,42 C3.8954305,42 3,41.1045695 3,40 L3,2 C3,0.8954305 3.8954305,2.02906125e-16 5,0 L22.8,0 L22.8,12.25 L22.8,15.75 L39,15.75 Z M38.9558801,12.25 L26.4,12.25 L26.4,4.88498131e-15 L38.9558801,12.25 Z"
+                    ></path>
+                </svg>
+                <h3 class="mt2 text-inherit">Setup guide</h3>
+                <p>Learn more about deploying and managing your Metabase</p>
+                <span class="Button">View guide</span>
+            </a>
+        </li>
+        <li class="flex-half ml2">
+            <a href="/learn" class="block card text-default text-left p2 px3">
+                <svg
+                    width="42px"
+                    height="42px"
+                    viewBox="0 0 42 42"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#509ee3"
+                >
+                    <path
+                        d="M39,15.75 L39,40 C39,41.1045695 38.1045695,42 37,42 L5,42 C3.8954305,42 3,41.1045695 3,40 L3,2 C3,0.8954305 3.8954305,2.02906125e-16 5,0 L22.8,0 L22.8,12.25 L22.8,15.75 L39,15.75 Z M38.9558801,12.25 L26.4,12.25 L26.4,4.88498131e-15 L38.9558801,12.25 Z"
+                    ></path>
+                </svg>
+                <h3 class="mt2 text-inherit">Learn the basics</h3>
+                <p>
+                    Go through the fundamentals of asking questions and creating
+                    dashboards.
+                </p>
+                <span class="Button">View guide</span>
+            </a>
+        </li>
+    </ol>
+</div>
+
+    </div>
+</div>
+<img class="block ml-auto mr-auto" src="/images/mountain_01.png" width="1200" height="480" />
+
+    </div>
+
+    <footer class="MB-Footer py4  border-top px2 flex flex-column sm-flex-row justify-around">
+
+        <div class="mb1 sm-mb0">
+            <h6 class="mb2">© Metabase 2021</h6>
+          <a class="font-small block mb1 sm-mb0" href="/terms">Terms of Service</a>
+          <a class="font-small block mb1 sm-mb0" href="/license">License</a>
+          <a class="font-small block mb1 sm-mb0" href="/privacy">Privacy Policy</a>
+        </div>
+
+        <div class="mb1 sm-mb0">
+          <h6 class="mb2">Help and support</h6>
+          <a class="font-small block mb1 sm-mb0" href="/docs">Documentation</a>
+          <a class="font-small block mb1 sm-mb0" href="https://discourse.metabase.com">Discussion</a>
+          <a class="font-small block mb1 sm-mb0" href="/case_studies">How companies use Metabase</a>
+        </div>
+
+        <div class="mb1 sm-mb0">
+          <h6 class="mb2">Elsewhere</h6>
+          <a href="https://twitter.com/metabase" class="font-small flex align-center mb1 sm-mb0 TwitterLink">
+            <svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentcolor">
+              <path d="M24.9465693,3.43255605 C24.0654891,3.83264574 23.1186277,4.10304933 22.1248175,4.22466368 C23.1392117,3.60206278 23.9181606,2.61623318 24.2849927,1.44161435 C23.3357664,2.01802691 22.2843212,2.43668161 21.1652555,2.66233184 C20.2690219,1.68466368 18.9922044,1.07372197 17.5791825,1.07372197 C14.8658686,1.07372197 12.6661022,3.32600897 12.6661022,6.10403587 C12.6661022,6.49829596 12.709635,6.88224215 12.7933723,7.25040359 C8.71021898,7.0406278 5.09016058,5.03793722 2.6670365,1.99452915 C2.24414599,2.73748879 2.00186861,3.60161435 2.00186861,4.52349776 C2.00186861,6.26869955 2.86928467,7.80843049 4.18753285,8.71049327 C3.38213139,8.68439462 2.62464234,8.45811659 1.96218978,8.08134529 C1.96183942,8.10233184 1.96183942,8.12340807 1.96183942,8.14457399 C1.96183942,10.5818834 3.65532847,12.6150673 5.90283212,13.07713 C5.49054015,13.1921076 5.05652555,13.2535426 4.60840876,13.2535426 C4.29185401,13.2535426 3.98405839,13.2220628 3.68414599,13.1633184 C4.30928467,15.1618834 6.12364964,16.6162332 8.27348905,16.656861 C6.59208759,18.006009 4.47369343,18.8102242 2.1719708,18.8102242 C1.77544526,18.8102242 1.38435036,18.7864574 1,18.74 C3.17418978,20.1672646 5.75664234,21 8.53109489,21 C17.567708,21 22.5092555,13.3347982 22.5092555,6.68735426 C22.5092555,6.46923767 22.5045255,6.252287 22.4950657,6.03659193 C23.4548905,5.32735426 24.2878832,4.44134529 24.9465693,3.43255605"></path>
+            </svg>
+            <span class="ml1">@metabase</span>
+          </a>
+          <a class="font-small flex align-center mb1 sm-mb0" href="https://github.com/metabase/metabase">
+            <svg width="26px" height="26px" viewBox="0 0 26 26" fill="currentcolor">
+              <path d="M12.7888232,0 C5.72701843,0 0,5.72623326 0,12.7903935 C0,18.4412506 3.664381,23.2347038 8.74677616,24.9259565 C9.38668842,25.0437318 9.61988344,24.6487921 9.61988344,24.3095993 C9.61988344,24.0065243 9.60889108,23.2017267 9.60260973,22.1346828 C6.04501164,22.9072885 5.29439063,20.419875 5.29439063,20.419875 C4.71258083,18.942188 3.87402097,18.5488187 3.87402097,18.5488187 C2.71275688,17.7557986 3.96195983,17.7715019 3.96195983,17.7715019 C5.24571019,17.8617963 5.92095503,19.0897997 5.92095503,19.0897997 C7.06180474,21.0440839 8.9148022,20.4795478 9.64343849,20.1521326 C9.75964341,19.3261354 10.0901993,18.7623845 10.4553026,18.4428209 C7.61534847,18.1201167 4.62935298,17.0224513 4.62935298,12.12143 C4.62935298,10.7254006 5.12793493,9.58298052 5.94608042,8.68945886 C5.81417212,8.36596947 5.37526298,7.06494541 6.07170736,5.30459782 C6.07170736,5.30459782 7.14503259,4.96069405 9.5884767,6.61582907 C10.6084105,6.33159811 11.7029352,6.19026779 12.7903935,6.18477161 C13.8770666,6.19026779 14.9708062,6.33159811 15.9923103,6.61582907 C18.4341841,4.96069405 19.505939,5.30459782 19.505939,5.30459782 C20.2039537,7.06494541 19.7650445,8.36596947 19.6339214,8.68945886 C20.4536372,9.58298052 20.9482933,10.7254006 20.9482933,12.12143 C20.9482933,17.035014 17.9575868,18.1161909 15.1089958,18.4326137 C15.5675342,18.8275535 15.9766069,19.6080109 15.9766069,20.8014669 C15.9766069,22.5107785 15.9609036,23.8903194 15.9609036,24.3095993 C15.9609036,24.6519328 16.1917431,25.0500132 16.8402922,24.9251714 C21.9187615,23.2299928 25.5800018,18.4396803 25.5800018,12.7903935 C25.5800018,5.72623326 19.8529834,0 12.7888232,0"></path>
+            </svg>
+            <span class="ml1">GitHub</span>
+          </a>
+        </div>
+
+        <div class="mb1 sm-mb0">
+          <h6 class="mb2">About Metabase</h6>
+          <a class="font-small block mb1 sm-mb0" href="/jobs">Jobs</a>
+          <a class="font-small block mb1 sm-mb0" href="/contact">Contact Us</a>
+        </div>
+
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="//metabase.us10.list-manage.com/subscribe/post?u=869fec0e4689e8fd1db91e795&amp;id=b9664113a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h6 class="mb2">Get updates and news about Metabase</h6>
+              <div class="mc-field-group block">
+                <input type="email" value="" name="EMAIL" class="required email input sm-input-small bordered  inline-block" id="mce-EMAIL" tabindex="-1" placeholder="Email address">
+                <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="Button  inline-block sm-Button--small">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_869fec0e4689e8fd1db91e795_b9664113a8" tabindex="-1" value=""></div>
+
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+</footer>
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+<script type='text/javascript'>
+  var mobileNavTrigger = document.querySelector('.js-mobile-nav-trigger'),
+      nav = document.querySelector('.js-nav'),
+      body = document.querySelector('body'),
+      closeTrigger = document.querySelector('.js-mobile-nav-close-trigger')
+
+  function disableTouchScroll () {
+    body.addEventListener('touchmove', function (ev) { ev.preventDefault() })
+  }
+  function enableTtouchScroll () {
+    body.removeEventListener('touchmove')
+  }
+  mobileNavTrigger.addEventListener('click', function (ev) {
+    nav.classList.toggle('show')
+  })
+</script>
+
+    <script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<span class='octicon octicon-link'></span>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
+
+  </body>
+  <script type="text/javascript" src="/js/contentloaded.min.js"></script>
+  <script type="text/javascript" src="/js/lightbox.js"></script>
+  <script type="text/javascript" src="/js/documentation.js"></script>
+  <script type="text/javascript" src="/js/blog.js"></script>
+
+</html>

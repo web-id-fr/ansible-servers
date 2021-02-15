@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+
+  roles:
+    # Should be run first, in this order
+    - roles/python
+
+    # Can be runned in any order
+    # - roles/bash
+    - roles/java
+    - roles/metabase
