@@ -1,0 +1,14 @@
+---
+- name: Adding AdoptOpenJDK repository key
+  apt_key:
+    url: https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public
+    state: present
+
+- name: Adding AdoptOpenJDK repository
+  apt_repository:
+    repo: deb https://adoptopenjdk.jfrog.io/adoptopenjdk/deb {{ ansible_distribution_release }} main
+    state: present
+
+- name: Installing Java
+  apt:
+    name: adoptopenjdk-11-hotspot

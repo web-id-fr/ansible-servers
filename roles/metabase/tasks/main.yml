@@ -1,0 +1,15 @@
+---
+- name: Create metabase directory
+  file:
+    path: /home/forge/metabase
+    state: directory
+  become: yes
+  become_user: forge
+
+- name: Downloading metabase .jar
+  get_url:
+    url: https://downloads.metabase.com/latest/metabase.jar
+    dest: /home/forge/metabase/metabase.jar
+    mode: '0770'
+  become: yes
+  become_user: forge
